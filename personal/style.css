@@ -1,0 +1,171 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    position: sticky;
+    left: 0;
+    top: 0;
+    background-color: white;
+    color: black;
+    padding: 15px 30px;
+}
+
+.navbar {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+    margin: auto;
+}
+
+.logo {
+    font-size: 46px;
+    font-family: 'Caveat', cursive;
+    color: black;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 15px;
+    list-style: none;
+    transition: all 0.3s;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-links a {
+    color: black;
+    font-family: Arial;
+    text-transform: uppercase;
+    font-weight: inherit;
+    transition: all 0.3s;
+}
+
+.nav-links a:hover {
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+footer {
+    background: white;
+    color: black;
+    text-align: center;
+    font-size: 14px;
+    padding: 50px 0;
+    font-family: Arial;
+}
+
+section {
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    gap: 1vw;
+    padding: 0 4vw;
+}
+
+img {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.title {
+    font-size: 26px;
+    font-weight: bold;
+    font-family: Impact;
+    margin-bottom: 24px;
+}
+
+.text {
+    line-height: 150%;
+}
+
+.picture img {
+    width: 85%;
+    border-radius: 50%;
+
+}
+
+.profile-text {
+    width: 65%;
+}
+
+.profile-text::first-line {
+    font-size: 40px;
+    font-family: 'Caveat', cursive;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        display: block;
+    }
+
+    .nav-links {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .logo {
+        display: block;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .content {
+        flex-wrap: wrap;
+        padding: 3vw 20px;
+    }
+
+    .content>div {
+        width: 100% !important;
+    }
+
+    .profile-text {
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 376px) {
+    header {
+        padding: 10px 20px;
+    }
+
+    .nav-links a {
+        font-size: 14px !important;
+    }
+
+    .nav-links li {
+        margin: 0;
+    }
+}
