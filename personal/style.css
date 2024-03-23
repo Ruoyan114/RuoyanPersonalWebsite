@@ -122,8 +122,8 @@ img {
 }
 
 .profile-text::first-line {
-    font-size: 40px;
-    font-family: 'Caveat', cursive;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 @media screen and (max-width: 768px) {
