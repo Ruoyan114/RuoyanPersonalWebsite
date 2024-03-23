@@ -25,52 +25,74 @@
 <section>
     <div class="projects-text">
         <div class="project1">
-            <h2 class="project-title">Project1: Full Stack Online Discount Discover Web Application</h2>
+            <h2 class="project-title">Project1: Distributed Key-Value storage system</h2>
             <ul class="project1-description">
-                <li>Developed a full stack discount discover application that allow users to post and share discount
-                    information using HTML, CSS, JavaScript and React for the front-end
+                <li>Engineered a distributed Key-Value storage system with high availability and strong consistency, 
+                    utilizing the Raft consensus algorithm for operations including leader election and log replication.
                 </li>
-                <li>Leveraged JavaScript to create dynamic and real-time user interactions, including an emoji-based
-                    feedback system, resulted in a 35% increase in user engagement
+                <li>Implemented a Multi-Raft architecture in Java to shared data effectively, enabling migration 
+                    across multiple Raft Groups to achieve optimal load distribution and resilience.
                 </li>
-                <li>Integrated an online database with the Supabase API to manage and categorize user-submitted discount
-                    information
+                <li>Designed a Key-Value storage interface that ensures linearizable read and write operations, 
+                    achieving stringent consistency levels required for critical applications.
+                </li>
+                <li>
+                    Incorporated asynchronous Apply to increase the throughput and scalability, utilized ReadIndex 
+                    and FollowerRead to reduce the latency of read operations by 42%, and implemented Prevote strategies 
+                    to eliminate unnecessary elections to improve the system stability.
+                </li>
+                <li>
+                    Employed MVCC for robust multi-version concurrency control and built on the Percolator model, a 
+                    distributed database based on BigTable, to support efficient distributed transactions.
                 </li>
             </ul>
         </div>
 
         <div class="project2">
-            <h2 class="project-title">Project2: Rideshare Driver Validation and Management System</h2>
+            <h2 class="project-title">Project2: High-Performance Distributed Message Queue System</h2>
             <ul class="project2-description">
-                <li>Developed a driver-side application for a ride-sharing company, focusing on the registration and
-                    validation of prospective drivers using Object-Oriented Design
+                <li>Developed a high-performance message queue system in Java with Spring, enabling robust message storage, 
+                    publish/subscribe patterns, ordered message delivery, and message persistence with acknowledgments.
                 </li>
-                <li>Developed 'provideDriverInfo' functionality, employing CSV data parsing for the accurate display of
-                    driver profiles, vehicle registrations, and driving records
+                <li>Engineered an efficient message storage mechanism comprising advanced data structures and persistent 
+                    storage solutions, ensuring reliable message transfer between producers and consumers.
                 </li>
-                <li>Utilized Gradle for efficient build automation, JUnit for essential testing, and Git for effective
-                    version control
+                <li>Established guarantees for message order consistency by integrating partitioning techniques and distributed 
+                    sorting algorithms, ensuring messages are processed in the correct sequence by consumers.
+                </li>
+                <li>
+                    Implemented traffic control protocols to dynamically regulate the message throughput from producers, preventing 
+                    system overload and maintaining high availability.
+                </li>
+                <li>
+                    Stress tested the system and achieved 5 seconds for the 95% of response times.
                 </li>
             </ul>
-            <div class="project2-code-link">
+            <!-- <div class="project2-code-link">
                 <a href="https://github.com/Ruoyan114/RideShareSystem-Prospective-Drivers-Validator-and-Simulator.git">Link
                     to code repos</a>
-            </div>
+            </div> -->
         </div>
 
         <div class="project3">
-            <h2 class="project-title">Project3: Currency Converter Application</h2>
+            <h2 class="project-title">Full Stack Online Discount Discover Web Application</h2>
             <ul class="project3-description">
-                <li>Created a user-friendly Python application featuring a Graphical User Interface (GUI) built with Tkinter
-                    to streamline currency conversion for users
+                <li>Built a full-stack web application for sharing discount information using JavaScript, Node.js, Express, and React.
                 </li>
-                <li>Leveraged the 'forex-python' library to seamlessly access and utilize current currency exchange rate
-                    data, empowering users to perform real-time, accurate currency conversions
+                <li>Created reusable React components for a consistent user interface, and developed dynamic frontend features including
+                     an emoji feedback system that boosted user engagement by 35%.
+                </li>
+                <li>
+                    Integrated the open-source Supabase database through RESTful APIs for online database management, enabling efficient 
+                    categorization and retrieval of user-posted discount information.
+                </li>
+                <li>
+                    Implemented authentication with Passport.js to realize user authentication and authorization, improving system security.
                 </li>
             </ul>
-            <div class="project3-code-link">
+            <!-- <div class="project3-code-link">
                 <a href="https://github.com/Ruoyan114/Currency-Converter.git">Link to code repos</a>
-            </div>
+            </div> -->
 
         </div>
     </div>
