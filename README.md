@@ -1,1 +1,1 @@
-# cs5610sp2024proj1
+My personal website including self introduction, projects experiences etc.
